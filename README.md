@@ -1,75 +1,82 @@
-# Notepad - Anki Add-on
+﻿# Notepad — Anki Add-on
 
-A modern notepad add-on for Anki that provides a clean, customizable text editor during card review sessions.
+A lightweight notepad for Anki review sessions with a clean editor, easy formatting, and flexible docking.
 
-## Features
+## 🚀 What it does
 
-- **Docked or Windowed Mode**: Use as a sidebar dock or as a floating window
-- **Rich Text Editing**: Bold, italic, and underline formatting
-- **Custom Themes**: Built-in light and dark themes with custom theme support
-- **Auto-formatting**: Optional automatic list creation
-- **Card Font Sync**: Option to match the editor font to your card font
-- **Keyboard Shortcuts**: Ctrl+N to toggle, Ctrl+B/I/U for formatting
-- **Transparent Windows**: Support for transparent/semi-transparent windows on Windows
-- **Position Memory**: Remembers window position and dock width
+- Adds a notepad panel or floating editor during review
+- Supports bold, italic, and underline formatting
+- Applies custom light/dark themes
+- Can match the card font automatically
+- Saves window position and dock width between sessions
 
-## Installation
+## ✨ Highlights
 
-1. Copy this add-on folder to your Anki add-ons directory:
+- **Docked or windowed editor** for your preferred workflow
+- **Quick formatting shortcuts**: `Ctrl+B`, `Ctrl+I`, `Ctrl+U`
+- **Auto-formatting** for lists and notes
+- **Optional transparent window** on Windows
+- **Settings panel** for personalization
+
+## 📦 Installation
+
+1. Copy this folder into your Anki add-ons directory:
    - Windows: `%APPDATA%\Anki2\addons21\`
    - Mac: `~/Library/Application Support/Anki2/addons21/`
    - Linux: `~/.local/share/Anki2/addons21/`
 2. Restart Anki
-3. The Notepad menu will appear in the menu bar
+3. Open a review session and use the new Notepad menu
 
-## Configuration
+## ⚙️ Configuration
 
-The add-on creates `config.json` and `meta.json` files on first run. Template files are provided as `config.json.example` and `meta.json.example` for reference.
+The add-on creates `config.json` and `meta.json` on first run.
+Use `config.json.example` and `meta.json.example` as templates.
 
-### Settings
+Access settings from: `Notepad > Settings...`
 
-Access settings via: `Notepad > Settings...`
+### Main options
 
-Key options:
-- **Clear on new card**: Automatically clear the notepad when showing a new card
-- **Auto-open in reviewer**: Automatically show notepad when entering review mode
-- **Font source**: Use custom font or match card font
-- **Theme mode**: Follow system theme or force light/dark
-- **Window transparency**: Enable transparency effects (Windows only)
+- **Clear on new card** — reset notes automatically on each new card
+- **Auto-open in reviewer** — show the notepad when review starts
+- **Font source** — use a custom font or match card text
+- **Theme mode** — system, light, or dark
+- **Window transparency** — enable on Windows
 
-## Usage
+## ▶️ Usage
 
-- **Toggle Notepad**: Press `Ctrl+N` during card review
-- **Format text**: Use toolbar buttons or `Ctrl+B` (bold), `Ctrl+I` (italic), `Ctrl+U` (underline)
-- **Switch views**: Click the view button to toggle between docked and windowed mode
+- **Toggle Notepad**: `Ctrl+N`
+- **Bold**: `Ctrl+B`
+- **Italic**: `Ctrl+I`
+- **Underline**: `Ctrl+U`
+- **Switch view**: use the view toggle button to change between docked and floating
 
-## File Structure
+## 📁 Project structure
 
 ```
 Notepad/
 ├── __init__.py          # Add-on entry point
 ├── main.py              # Core logic and initialization
 ├── config.py            # Configuration management
-├── hooks.py              # Anki hook registration
+├── hooks.py             # Anki hook registration
 ├── state.py              # Runtime state management
-├── themes.py            # Theme definitions
+├── themes.py             # Theme definitions
 ├── ui/                  # UI components
 │   ├── dock.py          # Dock widget
 │   ├── window.py        # Floating window
 │   ├── editor.py        # Text editor
-│   ├── toolbar.py       # Toolbar with formatting buttons
+│   ├── toolbar.py       # Toolbar buttons
 │   ├── settings.py      # Settings dialog
 │   └── theme_editor.py  # Custom theme editor
-├── utils/               # Utility modules
+├── utils/               # Utility helpers
 │   ├── formatting.py    # Text formatting helpers
 │   └── windows.py       # Windows-specific utilities
 └── web/                 # Web assets
-    └── notepad.js       # JavaScript for reviewer integration
+    └── notepad.js       # Reviewer JavaScript integration
 ```
 
-## Development
+## 🧪 Development
 
-This add-on is built for Anki 2.1+ using PyQt5.
+Built for Anki 2.1+ with PyQt5.
 
 ### Requirements
 
@@ -77,10 +84,6 @@ This add-on is built for Anki 2.1+ using PyQt5.
 - Python 3.9+
 - PyQt5 (included with Anki)
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-This is a personal project for Anki customization. Feel free to fork and modify for your own needs.
+MIT License — see [LICENSE](LICENSE)
