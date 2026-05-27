@@ -50,8 +50,8 @@ Notepad/
 ├── __init__.py          # Add-on entry point
 ├── main.py              # Core logic and initialization
 ├── config.py            # Configuration management
-├── hooks.py             # Anki hook registration
-├── state.py             # Runtime state management
+├── hooks.py              # Anki hook registration
+├── state.py              # Runtime state management
 ├── themes.py            # Theme definitions
 ├── ui/                  # UI components
 │   ├── dock.py          # Dock widget
